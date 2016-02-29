@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo build blog on MAC | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.install brew/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”注册github账号brew install git         #Mac电脑使用brew安装创建ssh$cd ～/.ssh  //检查是否已经存在sshssh-keyge">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo build blog on MAC">
+<meta property="og:url" content="http://yoursite.com/2016/02/28/hexo-build-blog-on-MAC/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.install brew/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”注册github账号brew install git         #Mac电脑使用brew安装创建ssh$cd ～/.ssh  //检查是否已经存在sshssh-keyge">
+<meta property="og:updated_time" content="2016-02-28T08:40:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo build blog on MAC">
+<meta name="twitter:description" content="1.install brew/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”注册github账号brew install git         #Mac电脑使用brew安装创建ssh$cd ～/.ssh  //检查是否已经存在sshssh-keyge">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo-build-blog-on-MAC" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/02/28/hexo-build-blog-on-MAC/" class="article-date">
+  <time datetime="2016-02-28T08:37:17.000Z" itemprop="datePublished">2016-02-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hexo build blog on MAC
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.<br>install brew<br>/usr/bin/ruby -e “$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install" target="_blank" rel="external">https://raw.githubusercontent.com/Homebrew/install/master/install</a>)”<br>注册github账号<br>brew install git         #Mac电脑使用brew安装<br>创建ssh<br>$cd ～/.ssh  //检查是否已经存在ssh<br>ssh-keygen -t rsa -C xxxxx@hotmail.com（注册github时的email）<br>ssh key默认保存地址：生成在 ～/.ssh下<br>生成后可以在命令行中用open ～/.ssh打开文件夹，打开id_rsa.pub<br>复制其中的内容到github SSH key管理中<br>github网站，右上角头像——setting——SSH keys——add and name new key </p>
+<p>验证MAC和Github是否连上，ssh -T git@github.com<br>注意当前路径<br>关于版本控制：<a href="http://www.cnblogs.com/angeldevil/p/3238470.html" target="_blank" rel="external">http://www.cnblogs.com/angeldevil/p/3238470.html</a></p>
+<p>git remote add origin git@github.com:youname/Test.git //连接远程仓库并建了一个名叫：origin的别名<br>git push -u origin master<br>如果这步出错了：<br>git pull origin master</p>
+<p>brew install node  #如果我没记错的话,最新版的node.js的包中已经集成了npm包管理工具</p>
+<p>使用以下命令验证是否安装成功<br>node -v<br>npm -v</p>
+<p>进入存放blog的文件夹<br>npm install hexo -g  #-g表示全局安装, npm默认为当前项目安装<br>hexo init <folder>  #执行init命令初始化hexo到你指定的目录<br>hexo generate       #自动根据当前目录下文件,生成静态网页</folder></p>
+<p>添加sublime subl到命令行<br>alias subl=\’’/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl’\’</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/02/28/hexo-build-blog-on-MAC/" data-id="cil7sfbnj000152c9l4pgyjbv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/02/28/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/02/29/fail/">fail??</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/28/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/28/hexo-build-blog-on-MAC/">hexo build blog on MAC</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
